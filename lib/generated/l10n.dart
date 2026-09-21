@@ -60,14 +60,9 @@ class S {
     return Intl.message('Hadiya', name: 'appTitle', desc: '', args: []);
   }
 
-  /// `You have pushed the button this many times:`
-  String get bodyTestText {
-    return Intl.message(
-      'You have pushed the button this many times:',
-      name: 'bodyTestText',
-      desc: '',
-      args: [],
-    );
+  /// `My Gifts`
+  String get homeTag {
+    return Intl.message('My Gifts', name: 'homeTag', desc: '', args: []);
   }
 }
 
