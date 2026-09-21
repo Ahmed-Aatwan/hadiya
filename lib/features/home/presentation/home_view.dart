@@ -22,10 +22,12 @@ class MyHomePage extends StatelessWidget {
         title: Row(children: [const Icon(Icons.forward), Text(title)]),
         centerTitle: false,
       ),
-      body: Text(
-        //just a text
-        // ignore: lines_longer_than_80_chars
-        '${Localizations.localeOf(context).languageCode} + ${Directionality.of(context).name} + ${S.of(context).bodyTestText}',
+      body: Column(
+        children: [
+          Text(Localizations.localeOf(context).languageCode),
+          Text(Directionality.of(context).name),
+          Text(S.of(context).homeTag),
+        ],
       ),
     );
   }
