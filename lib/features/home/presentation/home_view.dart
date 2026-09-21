@@ -18,13 +18,14 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(title),
+        title: Row(children: [const Icon(Icons.forward), Text(title)]),
         centerTitle: false,
       ),
-      body: const Text(
-        'You have pushed the button this many times:',
+      body: Text(
+        //just a text
+        // ignore: lines_longer_than_80_chars
+        '${Localizations.localeOf(context).languageCode} + ${Directionality.of(context).name} + ${S.of(context).bodyTestText}',
       ),
     );
   }
