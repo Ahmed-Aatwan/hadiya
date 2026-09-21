@@ -1,4 +1,4 @@
-package io.github.Ahmed-Aatwan
+package io.github.ahmedaatwan.hadiya
 
 import io.flutter.embedding.android.FlutterActivity
 

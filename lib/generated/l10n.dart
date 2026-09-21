@@ -2,16 +2,16 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import 'package:hadiya/generated/intl/messages_all.dart';
+import 'intl/messages_all.dart';
 
 // **************************************************************************
 // Generator: Flutter Intl IDE plugin
 // Made by Localizely
 // **************************************************************************
 
-// ignore_for_file: lines_longer_than_80_chars
-// ignore_for_file: prefer_final_in_for_each
-// ignore_for_file: avoid_redundant_argument_values
+// ignore_for_file: non_constant_identifier_names, lines_longer_than_80_chars
+// ignore_for_file: join_return_with_assignment, prefer_final_in_for_each
+// ignore_for_file: avoid_redundant_argument_values, avoid_escaping_inner_quotes
 
 class S {
   S();
@@ -58,6 +58,16 @@ class S {
   /// `Hadiya`
   String get appTitle {
     return Intl.message('Hadiya', name: 'appTitle', desc: '', args: []);
+  }
+
+  /// `You have pushed the button this many times:`
+  String get bodyTestText {
+    return Intl.message(
+      'You have pushed the button this many times:',
+      name: 'bodyTestText',
+      desc: '',
+      args: [],
+    );
   }
 }
 
